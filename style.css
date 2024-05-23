@@ -1,0 +1,83 @@
+body {
+    background-image: url('move.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background: linear-gradient(to right, #231c46, #466680);
+    padding: 20px;
+    border-radius: 50%; 
+    box-shadow: 0 0 10px rgba(255, 149, 149, 0.719);
+    text-align: center;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(236, 233, 233);
+}
+
+.question {
+    text-align: center;
+    font-size: 30px;
+    width: 50%;
+    margin-bottom: 20px;
+    border-radius: 50%; /* Make it circular */
+}
+
+.options {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #c463b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    width: 50%;
+    border-radius: 50%; /* Make it circular */
+}
+
+button:hover {
+    color: #4f98c2;
+    background-color: white;
+    border: 1px solid #4f98c2;
+}
+
+#score {
+    font-size: 30px;
+    color: darkslategray;
+    border-radius: 50%; 
+}
+
+.feedback {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    border-radius: 50%; 
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
